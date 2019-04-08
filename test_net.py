@@ -23,10 +23,10 @@ import cv2
 import time
 #----------------------------------------------------------------------------------
 parser = argparse.ArgumentParser()
-# parser.add_argument('--testfile', type=str, default='./data/sample_val_100.pkl', help='test image list')
-# parser.add_argument('--test_path', type=str, default='./data/sampleval100', help='test image file')
-parser.add_argument('--testfile', type=str, default='./data/lytro_pairs.pkl', help='test image list')
-parser.add_argument('--test_path', type=str, default='./data/lytro', help='test image file')
+parser.add_argument('--testfile', type=str, default='./data/sample_val_100.pkl', help='test image list')
+parser.add_argument('--test_path', type=str, default='./data/sampleval100', help='test image file')
+# parser.add_argument('--testfile', type=str, default='./data/lytro_pairs.pkl', help='test image list')
+# parser.add_argument('--test_path', type=str, default='./data/lytro', help='test image file')
 parser.add_argument('--workers', type=int, default=2, help='number of data loading workers')
 parser.add_argument('--cuda', action='store_true', default=True, help='enables cuda')
 parser.add_argument('--imageSize', type=int, default=520, help='the low resolution image size')
@@ -40,8 +40,8 @@ opt = parser.parse_args()
 #-----------------------------output file-----------------------------------------------------------
 
 # ./data/12-25_12-00-15_model_20/
-result_dir = opt.out + opt.load_ckpt.split('/')[-2] + '_model_' + opt.load_ckpt.split('/')[-1].split('_')[0]+ '/'+ opt.test_path.split('/')[-1] +'/'
-
+# result_dir = opt.out + opt.load_ckpt.split('/')[-2] + '_model_' + opt.load_ckpt.split('/')[-1].split('_')[0]+ '/'+ opt.test_path.split('/')[-1] +'/'
+result_dir = opt.out + 'model_' + opt.load_ckpt.split('/')[-1].split('_')[0]+'/'+ opt.test_path.split('/')[-1] +'/'
 if not os.path.exists(result_dir):
     os.makedirs(result_dir)
 
