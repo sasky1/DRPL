@@ -30,7 +30,7 @@ parser.add_argument('--test_path', type=str, default='./data/sampleval100', help
 parser.add_argument('--workers', type=int, default=2, help='number of data loading workers')
 parser.add_argument('--cuda', action='store_true', default=True, help='enables cuda')
 parser.add_argument('--imageSize', type=int, default=520, help='the low resolution image size')
-parser.add_argument('--nGPU', type=int, default=2, help='number of GPUs to use')
+parser.add_argument('--nGPU', type=int, default=1, help='number of GPUs to use')
 parser.add_argument('--load_ckpt', type=str, default=None, help="path to finetune weights (to continue training)")
 parser.add_argument('--out', type=str, default='./data/', help='output image dir')
 parser.add_argument('--thread', type=float, default=0.5, help='thread for mask')
