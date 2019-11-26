@@ -9,5 +9,7 @@ torchvision               0.2.1
 
 test:
 python test_net.py --load_ckpt ./model/40_net_params.pkl
+or
+run: sh test.sh
 
 selected training images: data/selected
