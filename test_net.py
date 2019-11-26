@@ -52,7 +52,7 @@ cudnn.benchmark = True
 if torch.cuda.is_available() and not opt.cuda:
     print("WARNING: You have a CUDA device, so you should probably run with --cuda")
 
-device = torch.device("cuda:0,1" if opt.cuda else "cpu")
+device = torch.device("cuda:0" if opt.cuda else "cpu")
 ngpu = int(opt.nGPU)
 # ------------------------------------ step 1/5 ------------------------------------
 
