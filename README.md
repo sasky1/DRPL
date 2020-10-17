@@ -14,4 +14,4 @@ run: sh test.sh
 
 selected training images: data/selected
 
-Please find the training code in https://github.com/Redaimao/DPRL
+Please find the training code in https://github.com/Redaimao/DRPL
