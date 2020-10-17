@@ -1,4 +1,8 @@
-# DPRL
+This is the implementation of DRPL:Deep Regression Pair Learning for Multi-Focus Image Fusion.
+
+by Jinxing Li*; Xiaobao Guo*; Guangming Lu; Bob Zhang; Yong Xu; Feng Wu; David Zhang.
+
+# DRPL
 
 
 
